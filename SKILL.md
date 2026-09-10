@@ -19,9 +19,22 @@ Before onboarding is complete:
 - Do not infer or fabricate endpoint URLs, credentials, OAuth settings, headers, or account identifiers.
 - Ask the responsible human to confirm that access has been explicitly approved.
 
-After secure onboarding, discover available capabilities only through the MCP client's standard tools/list operation. Do not guess tool names, parameters, schemas, or capabilities. Use only tools and fields returned by discovery.
+After secure onboarding, discover available capabilities only through the MCP client's standard `tools/list` operation. Use only tools and fields returned by discovery.
 
 If discovery fails, returns no tools, or produces an unexpected schema, stop and request human review.
+
+## Current public tool catalogue
+
+The current public capability names are listed below. They are not a substitute for live schema discovery: confirm that a tool and its exact fields are returned by `tools/list` for the approved account before invoking it.
+
+- `atomflux_preflight_tool_graph` — checks a declared tool graph and returns a deterministic interface seam report.
+- `atomflux_preflight_lattice` — analyses an unsigned workflow or Lattice draft and returns a bounded preflight report or caller-owned request ID where applicable.
+- `atomflux_diff_draft` — compares two unsigned safe drafts and returns a bounded comparison.
+- `atomflux_scaffold_draft` — produces an unsigned proposal starting point only.
+- `atomflux_get_status` — reads bounded status for a caller-owned result or request.
+- `atomflux_explain_status` — reads a caller-owned corrective explanation for a returned status.
+
+Read the full [tool catalogue](docs/tool-catalog.md) for the purpose and boundary of each tool.
 
 ## Input safety
 
