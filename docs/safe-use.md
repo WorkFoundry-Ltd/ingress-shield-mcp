@@ -6,6 +6,8 @@ Agent Preflight helps an approved AI coding or agent client check a proposed too
 
 It is deliberately a read-only preflight surface. A result supports a human decision; it does not make that decision.
 
+The current public tool names and their limits are in the [tool catalogue](tool-catalog.md). After onboarding, use `tools/list` for the live tool availability and exact schema; do not infer arguments from documentation.
+
 ## Keep inputs public-safe
 
 Provide only the minimum declared, non-sensitive information that the discovered tool schema requires. Do not send credentials, access tokens, private keys, signing material, personal data, confidential payloads, proprietary source code, private endpoints, or deployment details.
@@ -14,7 +16,7 @@ Provide only the minimum declared, non-sensitive information that the discovered
 
 This repository does not publish a live client configuration, endpoint setting, credential, OAuth setting, or shared key. Access is reviewed and invite-only. Use only the exact onboarding information supplied by WorkFoundry after approval.
 
-After onboarding, use the MCP client's tools/list operation to discover the current tool set and schemas. Do not guess tool names or arguments from examples, documentation, or another account.
+After onboarding, use the MCP client's `tools/list` operation to discover the current tool set and schemas. Do not guess tool names or arguments from examples, documentation, or another account.
 
 ## Interpret findings correctly
 
