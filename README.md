@@ -14,12 +14,12 @@ A compatibility result is evidence for human review. It is not permission to exe
 
 Ingress Shield currently exposes six public capability names for the Agent Preflight pilot. They are bounded, account-scoped and read-only. Their availability and exact input schemas are confirmed through `tools/list` after approved onboarding.
 
-- [`atomflux_preflight_tool_graph`](docs/tool-catalog.md#atomflux_preflight_tool_graph) — check a declared tool graph for interface seams.
-- [`atomflux_preflight_lattice`](docs/tool-catalog.md#atomflux_preflight_lattice) — analyse an unsigned workflow or Lattice draft before action.
-- [`atomflux_diff_draft`](docs/tool-catalog.md#atomflux_diff_draft) — compare two unsigned safe drafts.
-- [`atomflux_scaffold_draft`](docs/tool-catalog.md#atomflux_scaffold_draft) — produce an unsigned proposal starting point.
-- [`atomflux_get_status`](docs/tool-catalog.md#atomflux_get_status) — read a caller-owned bounded result status.
-- [`atomflux_explain_status`](docs/tool-catalog.md#atomflux_explain_status) — read a caller-owned corrective explanation.
+- [`atomflux_preflight_tool_graph`](docs/tool-catalog.md#current-tools) — check a declared tool graph for interface seams.
+- [`atomflux_preflight_lattice`](docs/tool-catalog.md#current-tools) — analyse an unsigned workflow or Lattice draft before action.
+- [`atomflux_diff_draft`](docs/tool-catalog.md#current-tools) — compare two unsigned safe drafts.
+- [`atomflux_scaffold_draft`](docs/tool-catalog.md#current-tools) — produce an unsigned proposal starting point.
+- [`atomflux_get_status`](docs/tool-catalog.md#current-tools) — read a caller-owned bounded result status.
+- [`atomflux_explain_status`](docs/tool-catalog.md#current-tools) — read a caller-owned corrective explanation.
 
 See the [full tool catalogue](docs/tool-catalog.md) for purpose and boundaries. Do not infer arguments from this list; use only the schema returned for the approved account.
 
